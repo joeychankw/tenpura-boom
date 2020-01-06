@@ -187,7 +187,6 @@ var soundMonster = null;
 // The load function for the SVG document
 //
 function load(evt) {
-    // console.log(document.cookie);
     // var date = new Date(0);
     // console.log(date.toGMTString());
     
@@ -198,27 +197,20 @@ function load(evt) {
     svgdoc.documentElement.addEventListener("keydown", keydown, false);
     svgdoc.documentElement.addEventListener("keyup", keyup, false);
 
-    soundBgm = document.getElementById("sound_bgm");
-    // soundBgm.play();
-    soundWin = document.getElementById("sound_win");
-    soundLose = document.getElementById("sound_lose");
-    soundShoot = document.getElementById("sound_shoot");
-    soundMonster = document.getElementById("sound_monster");
-
+    // soundBgm = document.getElementById("sound_bgm");
+    // soundWin = document.getElementById("sound_win");
+    // soundLose = document.getElementById("sound_lose");
+    // soundShoot = document.getElementById("sound_shoot");
+    // soundMonster = document.getElementById("sound_monster");
+    soundBgm = new Audio("bgm.mp3");
+    soundWin = new Audio("win.mp3");
+    soundLose = new Audio("lose.mp3");
+    soundShoot = new Audio("shoot.mp3");
+    soundMonster = new Audio("monster.mp3");
+    soundBgm.loop = true;
 
     // Remove text nodes in the 'platforms' group
     cleanUpGroup("platforms", true);
-
-    // Create the player
-    // player = new Player();
-
-    // Create the monsters
-    // createGameObjs();
-
-    // Start the game interval
-    // gameInterval = setInterval("gamePlay()", GAME_INTERVAL);
-    // console.log(svgdoc.getElementById("platforms"));
-    // console.log(svgdoc.getElementById("platforms").childNodes);
 }
 
 // function nameupdate() {

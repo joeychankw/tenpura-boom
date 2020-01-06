@@ -4,7 +4,7 @@
      xmlns:xhtml="http://www.w3.org/1999/xhtml"
      xmlns:xlink="http://www.w3.org/1999/xlink"
      xmlns:a="http://www.adobe.com/svg10-extensions" a:timeline="independent"
-     onload="top.load(evt)"
+     onload="load(evt)"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:cc="http://creativecommons.org/ns#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -12,6 +12,9 @@
      xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
      xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
      inkscape:version="0.92.3 (2405546, 2018-03-11)">
+
+<script xlink:href="game.js"></script>
+<script xlink:href="highscore.js"></script>
 
 <style>
 
@@ -941,24 +944,24 @@
     <!-- buttons -->
     <g transform="translate(0, 370)">
       <!-- open game guideline -->
-      <g class="button" onclick="top.openScreen('intro1')" transform="translate(130, 0)">
+      <g class="button" onclick="openScreen('intro1')" transform="translate(130, 0)">
         <rect x="-10" y="0" rx="5" ry="5" width="160" height="40"/>
         <text x="70" y="28">How to control?</text>
       </g>
       <!-- open character introduction -->
-      <g class="button" onclick="top.openScreen('intro2')" transform="translate(330, 0)">
+      <g class="button" onclick="openScreen('intro2')" transform="translate(330, 0)">
         <rect x="-10" y="0" rx="5" ry="5" width="160" height="40"/>
         <text x="70" y="28">Who are they?</text>
       </g>
     </g>
     <g transform="translate(0, 430)">
       <!-- enter game with normal mode -->
-      <g class="button" onclick="top.gamestart(0)" transform="translate(130, 0)">
+      <g class="button" onclick="gamestart(0)" transform="translate(130, 0)">
         <rect x="0" y="0" rx="5" ry="5" width="140" height="40"/>
         <text x="70" y="28">Normal Mode</text>
       </g>
       <!-- enter game with zoom mode -->
-      <g class="button" onclick="top.gamestart(1)" transform="translate(330, 0)">
+      <g class="button" onclick="gamestart(1)" transform="translate(330, 0)">
         <rect x="0" y="0" rx="5" ry="5" width="140" height="40"/>
         <text x="70" y="28">Zoom Mode</text>
       </g>
@@ -974,7 +977,7 @@
         <tspan x="53" dy="30" style="text-anchor:start">Jump: Z</tspan>
         <tspan x="53" dy="30" style="text-anchor:start">Shoot: space</tspan>
       </text>
-      <g class="button" onclick="top.closeScreen('intro1')" transform="translate(168, 2)">
+      <g class="button" onclick="closeScreen('intro1')" transform="translate(168, 2)">
         <rect x="0" y="0" rx="5" ry="5" width="30" height="30"/>
         <text x="15" y="22">X</text>
       </g>
@@ -1010,7 +1013,7 @@
         <tspan x="90" dy="20" word-spacing="1">teleport to anywhere</tspan>
       </text>
       <!-- close button -->
-      <g class="button" onclick="top.closeScreen('intro2')" transform="translate(408, 2)">
+      <g class="button" onclick="closeScreen('intro2')" transform="translate(408, 2)">
         <rect x="0" y="0" rx="5" ry="5" width="30" height="30"/>
         <text x="15" y="22">X</text>
       </g>
@@ -1168,7 +1171,7 @@
         <text id="gameovertext" x="300" y="270" style="fill:#f8566f;font-size:40px;font-weight:bold;text-anchor:middle">
           Game Over Message
         </text>
-        <g class="button" onclick="top.highscore()" transform="translate(230, 320)">
+        <g class="button" onclick="highscore()" transform="translate(230, 320)">
           <rect x="0" y="0" width="140" height="40"/>
           <text x="70" y="28">Next</text>
         </g>
@@ -1186,7 +1189,7 @@
         </text>
         <text id="highscoretext" y="90"
          style="fill:gray;font-size:20px"/>
-        <g class="button" onclick="top.gamestart()" transform="translate(190, 480)">
+        <g class="button" onclick="gamestart()" transform="translate(190, 480)">
           <rect x="0" y="0" rx="5" ry="5" width="140" height="40"/>
           <text x="70" y="28">Start Again</text>
         </g>
