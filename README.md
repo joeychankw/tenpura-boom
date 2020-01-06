@@ -2,7 +2,12 @@
 HKUST 2017-2018 Summer COMP4021<br/>
 Assignment 2 - Dynamic SVG Game
 
-## Setup
+## Demo
+https://joeychankw.github.io/tenpura-boom/
+or
+https://joeychankw.github.io/tenpura-boom/index.html
+
+## Local setup
 1. intsall XAMPP from https://www.apachefriends.org/index.html
 2. put source folder under xampp/htdocs/
 3. open XAMPP control panel and press Start for Apache
@@ -55,7 +60,7 @@ A 2D action game
 
 ## Note
 Tested in Chrome and Firefox.<br/>
-Word spacing issue founded in Firefox (Firefox ignore word-spacing).
+Firefox issues: Word spacing is ignore. Slow.
 
 Audio source
 - BGM is downloaded from YouTube Audio Library
