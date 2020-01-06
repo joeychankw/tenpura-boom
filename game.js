@@ -852,29 +852,12 @@ function moveMonsters() {
 
         if (monsters[i].node == null) continue;
 
-        // console.log(monsters);
-        // var vector = monsters[i].vector;
-        // var magnitude = Math.sqrt(Math.pow(vector.x, 2) + Math.pow(vector.y, 2));
-        // vector.x = (vector.x / magnitude) * MONSTER_MAX_SPEED;
-        // vector.y = (vector.y / magnitude) * MONSTER_MAX_SPEED;
-
-        // console.log(Math.sqrt(Math.pow(vector.x, 2) + Math.pow(vector.y, 2)));
-        // console.log(vector);
-        // console.log(monsters[i].position);
-        // monsters[i].node.setAttribute("transform", "translate("+monsters[i].position.x+", "+monsters[i].position.y+")");
-        monsters[i].node.setAttribute("transform", "scale("+monsters[i].direction+", 1)");
-
         monsters[i].position.x += monsters[i].vector.x;
         monsters[i].position.y += monsters[i].vector.y;
+
+        monsters[i].node.setAttribute("transform", "scale("+monsters[i].direction+", 1)");
         monsters[i].node.setAttribute("x", ((monsters[i].direction == 1)? monsters[i].position.x : -monsters[i].position.x - MONSTER_SIZE.w));
         monsters[i].node.setAttribute("y", monsters[i].position.y);
-
-        // if (monsters[i].direction == 1) {
-        //     monsters[i].node.setAttribute();
-        // } else {
-        //     monsters[i].node.setAttribute();
-        // }
-        // monsters[i].node.setAttribute("transform", "translate("+((monsters[i].direction==1)?0:MONSTER_SIZE.w)+", 0) scale("+monsters[i].direction+", 1)");
 
     }
 }
