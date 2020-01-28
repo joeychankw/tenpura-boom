@@ -65,4 +65,4 @@ Firefox issues: Word spacing is ignore. Slow.
 
 Audio source
 - BGM is downloaded from YouTube Audio Library
-- Other audio effects are recored from Kizuna AI and Kaguya Luna's Youtube videos.
+- Other audio effects are recored from Youtube channels [*A.I.Channel*](https://www.youtube.com/channel/UC4YaOt1yT-ZeyB0OmxHgolA) and [*Kaguya Luna Official*](https://www.youtube.com/channel/UCQYADFw7xEJ9oZSM5ZbqyBw)
