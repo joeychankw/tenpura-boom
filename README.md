@@ -15,6 +15,7 @@ https://xyzjoey.github.io/tenpura-boom/index.html
 
 ## Description
 A 2D mini game by JavaScript
+Goal: Collect all items and reach exit point
 
 <table>
 <tr>
