@@ -14,7 +14,7 @@ https://xyzjoey.github.io/tenpura-boom/index.html
 4. open browser (Chrome) and go to http://localhost/ + {relative path from xampp/htdocs/ to game.html} (e.g. http://localhost/tenpura-boom/src/game.html)
 
 ## Description
-A 2D mini game by JavaScript
+A 2D mini game by JavaScript<br/>
 Goal: Collect all items and reach exit point
 
 <table>
