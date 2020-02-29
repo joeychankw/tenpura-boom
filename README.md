@@ -3,9 +3,8 @@ HKUST 2017-2018 Summer COMP4021<br/>
 Assignment 2 - Dynamic SVG Game
 
 ## Demo
-https://xyzjoey.github.io/tenpura-boom/
-or
-https://xyzjoey.github.io/tenpura-boom/index.html
+https://xyzjoey.github.io/tenpura-boom/ </br>
+requirement: PC, chrome
 
 ## Local setup
 1. intsall XAMPP from https://www.apachefriends.org/index.html
